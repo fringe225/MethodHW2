@@ -316,6 +316,8 @@ namespace MethodHW2
 
 
             #endregion
+
+            //Console.WriteLine(CompareInt(19, 22, 23,5,43,2,3,2,4,77));   // extra for unlimited params TASK 1
         }
 
 
@@ -375,6 +377,20 @@ namespace MethodHW2
                 
                     
 
+        }
+
+        static int CompareInt(params int[] arr)
+        {
+            int max = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
+            }
+
+            return max;
         }
     }
 }
