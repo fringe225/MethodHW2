@@ -19,13 +19,13 @@ namespace MethodHW2
 
             //bool check;
             //int choice;
-            ////int a, b, c, d, e; with swicth region
+            //int a=0, b=0, c=0, d=0, e=0; //with swicth region
 
             //Console.WriteLine("Nece eded daxil edeceksiz ?");
             //while (true)
             //{
             //    check = int.TryParse(Console.ReadLine(), out choice);
-            //    if (check && choice>=3 && choice<=5)
+            //    if (check && choice >= 3 && choice <= 5)
             //    {
             //        break;
             //    }
@@ -35,60 +35,197 @@ namespace MethodHW2
             //    }
 
             //}
-            #region Switch case usulu ile
+            //int count = choice;
+            //#region Switch case usulu ile
             //switch (choice)
             //{
             //    case 3:
             //        Console.WriteLine("3 Eded daxil Edin: ");
-            //        int.TryParse(Console.ReadLine(), out a);
-            //        int.TryParse(Console.ReadLine(), out b);
-            //        int.TryParse(Console.ReadLine(), out c);
-            //        Console.WriteLine($"Bu 3 reqemnen en boyuyu - {CompareInt(a, b, c)}");
+            //        while (check || count != 0)
+            //        {
+            //            if (count == 3)
+            //            {
+
+            //                check = int.TryParse(Console.ReadLine(), out a);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Birinci regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Ikinci regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 2)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out b);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! ikinci regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Ucuncu regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 1)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out c);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Ucuncu regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    break;
+            //                }
+            //            }
+            //        }
+            //         Console.WriteLine($"Bu 3 reqemnen en boyuyu - {CompareInt(a, b, c)}");
             //        break;
             //    case 4:
             //        Console.WriteLine("4 Eded daxil Edin: ");
-            //        int.TryParse(Console.ReadLine(), out a);
-            //        int.TryParse(Console.ReadLine(), out b);
-            //        int.TryParse(Console.ReadLine(), out c);
-            //        int.TryParse(Console.ReadLine(), out d);
+            //        while (check || count != 0)
+            //        {
+            //            if (count == 4)
+            //            {
+
+            //                check = int.TryParse(Console.ReadLine(), out a);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Birinci regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Ikinci regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 3)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out b);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! ikinci regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Ucuncu regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 2)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out c);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Ucuncu regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Dorduncu regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 1)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out d);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Dorduncu regemi duzgun daxil edin!");
+            //                }
+            //                else if(check)
+            //                {
+            //                    break;
+            //                }
+            //            }
+            //        }
             //        Console.WriteLine($"Bu 4 reqemnen en boyuyu - {CompareInt(a, b, c, d)}");
             //        break;
             //    case 5:
             //        Console.WriteLine("5 Eded daxil Edin: ");
-            //        int.TryParse(Console.ReadLine(), out a);
-            //        int.TryParse(Console.ReadLine(), out b);
-            //        int.TryParse(Console.ReadLine(), out c);
-            //        int.TryParse(Console.ReadLine(), out d);
-            //        int.TryParse(Console.ReadLine(), out e);
+            //        while (check || count != 0)
+            //        {
+            //            if (count == 5)
+            //            {
+
+            //                check = int.TryParse(Console.ReadLine(), out a);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Birinci regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Ikinci regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 4)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out b);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! ikinci regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Ucuncu regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 3)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out c);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Ucuncu regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Dorduncu regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }
+            //            else if (count == 2)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out d);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Dorduncu regemi duzgun daxil edin!");
+            //                }
+            //                else if (check)
+            //                {
+            //                    Console.WriteLine("Beshinci regemi daxil edin: ");
+            //                    count--;
+            //                    continue;
+            //                }
+            //            }else if (count == 1)
+            //            {
+            //                check = int.TryParse(Console.ReadLine(), out e);
+            //                if (!check)
+            //                {
+            //                    Console.WriteLine("Warning!!! Beshinci regemi duzgun daxil edin!");
+            //                }else if (check)
+            //                {
+            //                    break;
+            //                }
+            //            }
+            //        }
             //        Console.WriteLine($"Bu 5 reqemnen en boyuyu - {CompareInt(a, b, c, d, e)}");
             //        break;
             //    default:
             //        break;
             //}
-            #endregion
-
-            #region Solution with loop
-            //int[] arr = new int[choice];
-            //Console.WriteLine($"Xahiw edirik {choice} dene eded daxil edin : ");
-            //for (int i = 0; i < choice; i++)
-            //{
-            //   int.TryParse(Console.ReadLine(), out arr[i]);
-            //}
-            //switch (choice)
-            //{
-            //    case 3:
-            //        Console.WriteLine($"Bu 3 reqemnen en boyuyu - {CompareInt(arr[0], arr[1], arr[2])}");
-            //        break;
-            //    case 4:
-            //        Console.WriteLine($"Bu 4 reqemnen en boyuyu - {CompareInt(arr[0], arr[1], arr[2],arr[3])}");
-            //        break;
-            //    case 5:
-            //        Console.WriteLine($"Bu 5 reqemnen en boyuyu - {CompareInt(arr[0], arr[1], arr[2],arr[3],arr[4])}");
-            //        break;
-            //    default:
-            //        break;
-            //}
-            #endregion
             #endregion
 
             #region task 2
@@ -135,7 +272,7 @@ namespace MethodHW2
             //{
             //    if (count == 3)
             //    {
-                   
+
             //        check = double.TryParse(Console.ReadLine(), out priceOne);
             //        if (!check)
             //        {
