@@ -127,54 +127,54 @@ namespace MethodHW2
             //    məbləği hesbalayan metod yazin -yəni metodunuz 3 doubel parameter qebul edib en boyuk ikisinin cemini hesablayib 
             //    qaytarmalidir
 
-            double priceOne=0, priceTwo=0, priceThree=0;
-            int count = 3;
-            bool check = true;
-            Console.WriteLine("3 eded daxil edin.\n Birinci regemi daxil edin:  ");
-            while (check || count!=0)
-            {
-                if (count == 3)
-                {
+            //double priceOne=0, priceTwo=0, priceThree=0;
+            //int count = 3;
+            //bool check = true;
+            //Console.WriteLine("3 eded daxil edin.\n Birinci regemi daxil edin:  ");
+            //while (check || count!=0)
+            //{
+            //    if (count == 3)
+            //    {
                    
-                    check = double.TryParse(Console.ReadLine(), out priceOne);
-                    if (!check)
-                    {
-                        Console.WriteLine("Warning!!! Birinci regemi duzgun daxil edin!");
-                    }
-                    else if (check)
-                    {
-                        Console.WriteLine("Ikinci regemi daxil edin: ");
-                        count--;
-                        continue;
-                    }
-                }else if (count == 2)
-                {
-                    check = double.TryParse(Console.ReadLine(), out priceTwo);
-                    if (!check)
-                    {
-                        Console.WriteLine("Warning!!! ikinci regemi duzgun daxil edin!");
-                    }
-                    else if (check)
-                    {
-                        Console.WriteLine("Ucuncu regemi daxil edin: ");
-                        count--;
-                        continue;
-                    }
-                }else if( count == 1)
-                {
-                    check = double.TryParse(Console.ReadLine(), out priceThree);
-                    if (!check)
-                    {
-                        Console.WriteLine("Warning!!! Ucuncu regemi duzgun daxil edin!");
-                    }
-                    else if (check)
-                    {
-                        break;
-                    }
-                }
-            }
+            //        check = double.TryParse(Console.ReadLine(), out priceOne);
+            //        if (!check)
+            //        {
+            //            Console.WriteLine("Warning!!! Birinci regemi duzgun daxil edin!");
+            //        }
+            //        else if (check)
+            //        {
+            //            Console.WriteLine("Ikinci regemi daxil edin: ");
+            //            count--;
+            //            continue;
+            //        }
+            //    }else if (count == 2)
+            //    {
+            //        check = double.TryParse(Console.ReadLine(), out priceTwo);
+            //        if (!check)
+            //        {
+            //            Console.WriteLine("Warning!!! ikinci regemi duzgun daxil edin!");
+            //        }
+            //        else if (check)
+            //        {
+            //            Console.WriteLine("Ucuncu regemi daxil edin: ");
+            //            count--;
+            //            continue;
+            //        }
+            //    }else if( count == 1)
+            //    {
+            //        check = double.TryParse(Console.ReadLine(), out priceThree);
+            //        if (!check)
+            //        {
+            //            Console.WriteLine("Warning!!! Ucuncu regemi duzgun daxil edin!");
+            //        }
+            //        else if (check)
+            //        {
+            //            break;
+            //        }
+            //    }
+            //}
 
-            Console.WriteLine($"Odeyeceyiniz mebleg = {ProductsPrice(priceOne,priceTwo,priceThree)}");
+            //Console.WriteLine($"Odeyeceyiniz mebleg = {ProductsPrice(priceOne,priceTwo,priceThree)}");
 
 
 
